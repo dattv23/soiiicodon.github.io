@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #000000 !important;
+    font-family: 'Roboto' !important;
+    color: #fff !important;
+}
+
+#header a,
+#main a,
+#footer a {
+    text-decoration: none !important;
+    color: #fff ;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 24px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-favorite {
+    width: 25px;
+    height: 25px;
+    background-color: #5c9e3d;
+    border-radius: 50%;
+}
+
+.name a {
+    margin: 0px 12px;
+}
+
+#header .nav-item:nth-child(2) {
+    position: relative;
+}
+
+#header .nav-item:nth-child(2)::before {
+    content: '';
+    height: 18px; 
+    width: 1px;
+
+    position: absolute;
+    left: 0;
+    top: 12px; 
+
+    background-color: #fff; 
+}
+
+#header .nav-item:nth-child(2):after {
+    content: '';
+    height: 18px; 
+    width: 1px;
+
+    position: absolute;
+    right: 0;
+    top: 12px; 
+
+    background-color: #fff; 
+}
+
+#header .nav-item .nav-link:hover,
+#footer a:hover {
+    color: #e6c7eb;
+}
+
+#header .actice {
+    color: #e6c7eb;
+}
+
+.personal-photo {
+    margin: 120px auto;
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/VungTau.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 50%;
+}
+
+.content {
+    margin-top: 120px;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.content h3, p {
+    font-family: 'Roboto', cursive;
+}
+
+#main {
+    height: 100%;
+    padding: 60px 180px;
+}
+
+#main .nav {
+    margin: 0px 80px;
+}
+
+#main .nav-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#main .nav-item:hover {
+    background-color: #000000;
+}
+
+#main p {
+    margin: 0;
+}
+
+#main .row {
+    margin-bottom: 36px;
+}
+
+.resume-color {
+    background-color: #78687a;
+}
+
+.projects-color {
+    background-color: #fe602f;
+}
+
+.contact-color {
+    background-color: #f5c645;
+}
+
+#footer {
+    margin-bottom: 100px;
+}
+
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 700px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 14px;
+    background-color: #282828;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background-color: #d13639;
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #f1f1f1;
+    color: #000000 !important;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f1f1f1;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 100%;
+    }
+}
