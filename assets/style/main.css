@@ -71,10 +71,7 @@ body {
 }
 
 #header .nav-item .nav-link:hover,
-#footer a:hover {
-    color: #e6c7eb;
-}
-
+#footer a:hover,
 #header .actice {
     color: #e6c7eb;
 }
